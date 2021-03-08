@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<style media ="screen, print">
+
+ body{
+font-family:sans-serif;
+padding-left: 20%;
+padding-right: 20%;
+
+}
+
+/* p{
+  font-family: serif;
+  font-weight:bold;
+} */
+label{
+  font-size: 18px;
+  display: block;
+  padding-bottom: 10px;
+
+}
+ input{
+  /* display:block; */
+  width: 100;
+  /* padding-bottom:20px; */
+}
+form{
+  background-color: #c0a1de;
+  padding: 50px 50px 50px 50px ;
+}
+textarea{
+  display: block;
+  width:100%;
+padding-bottom:20px;
+}
+/* input[type=checkbox]:not(old) + label,
+inpt[type=radio]:not(old) +label{
+display: inline-block;
+margin-left: -28px;
+padding-left: 28px;
+
+} */
+
+#button-area {
+  float:inherit;
+  /* background-color:blue; */
+  width: 50%;
+  height: 20%;
+}
+#submit{
+  width:auto;
+
+}
+</style>
+  <head>
+    <meta charset="utf-8">
+    <!-- <link rel= "stylesheet" type= "text/css" href="css/survey_form.css" media ="screen"> -->
+
+  </head>
+  <body>
+     <center><h1 id ="title"> Which Covid Vaccine have you received?</h1>
+     <p id ="description">  NY Consensus Survey </p> </center><br>
+
+<!-- <center> -->
+<form id = "survey-form">
+<label id = "name-label">Name:</label>
+<input type = "text" name="name" id ="name" required placeholder="Full Name"></input><br><br>
+<label id = "email-label">Email:</label>
+<input type="email" name="email" id="email" required placeholder="Email"></input><br><br>
+<br>
+
+
+
+<label for="vaccine">Choose Which Vaccine You Received:</label>
+<select id="dropdown" name="vaccine">
+  <option value="moderna">Moderna</option>
+  <option value="pfizer">Pfizer</option>
+  <option value="johnson">Johnson & Johnson</option>
+  <option value="novax">N/A</option>
+</select><br><br>
+
+<label id = "number-label">Rate your experience:</label>
+<input type = "number" name="number" id ="number" min="0" max="10" required placeholder="Level of Excitement"></input><br><br>
+
+<label id = "additional-comments"for="review">How Could We Have Made Your Experience Better:</label><br>
+<textarea id="review" name="review" rows="4" cols="25">
+Additional Comments
+  </textarea><br>
+
+<div id = "button-area">
+<label id ="age">Please select your age:</label>
+  <input type="radio" id="age1" name="age" value="30">0 - 30<br>
+  <!-- <label for="age1">0 - 30</label><br> -->
+  <input type="radio" id="age2" name="age" value="60">31 - 60<br>
+  <!-- <label for="age2">31 - 60</label><br> -->
+  <input type="radio" id="age3" name="age" value="100">61 - 100<br>
+  <!-- <label for="age3">61 - 100</label><br> -->
+  <!-- <input type="submit" value="Submit"> -->
+</div>
+<br>
+
+
+<div id = "box-area">
+<label id = "boruogh">Please select your boruogh:</p>
+<input type="checkbox" id="boruogh1" name="boruogh1" value="Manhattan">Manhattan<br>
+  <!-- <label for="vehicle1"> Manhattan</label><br> -->
+  <input type="checkbox" id="boruogh2" name="boruogh2" value="Queens">Queens<br>
+  <!-- <label for="vehicle2"> Queens</label><br> -->
+  <input type="checkbox" id="boruogh3" name="boruogh3" value="Brooklyn">Brooklyn<br>
+  <!-- <label for="vehicle3"> Brooklyn</label><br> -->
+  <input type="checkbox" id="boruogh4" name="boruogh4" value="Staten Island">Staten Island<br>
+  <!-- <label for="vehicle3"> Staten Island</label><br> -->
+  <input type="checkbox" id="boruogh5" name="boruogh5" value="The Bronx">The Bronx<br>
+  <!-- <label for="vehicle3"> The Bronx</label><br><br> -->
+</div>
+
+<br>
+
+
+<center><input id = "submit" type="submit"></center>
+</form>
+
+      <script type="text/javascript" src = "https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+
+    </script>
+<!-- </center> -->
+  </body>
+</html>
